@@ -1,0 +1,203 @@
+body{
+	font-size: 16px;
+font-family: 'Poiret One', cursive;
+font-weight: 550;
+color: white;
+background-color:black;
+
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0rem;
+	padding: 0rem;
+}
+
+img{
+	max-width: 100%;
+}
+a{
+	text-decoration: none;
+	color: white;
+}
+/*--layout--*/
+	body{
+	display: grid;
+		grid-template-areas: 
+			"fejlec"
+			"alap"
+			"lablec";
+		grid-template-rows: max-content 1fr max-content;
+		min-height: 100vh;
+		position: relative;
+		;
+	}
+	header{
+	grid-area: fejlec;
+	}
+	main{
+	grid-area: alap;
+	}
+	footer{
+	grid-area: lablec;
+	}
+/*--layout_end--*/
+
+/*--header--*/
+	header{
+		line-height: 3rem;
+		font-size: 2rem;
+		background-color:black;
+		text-align: center;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.header {
+		display: inline-block;
+		cursor: pointer;
+		background-color: black;
+		padding: 1rem 3rem;
+	}
+	.header:hover{
+	cursor: pointer;
+	background: #000000;
+	background: -moz-radial-gradient(center, #000000 0%, #001019 0%, #000000 100%);
+	background: -webkit-radial-gradient(center, #000000 0%, #001019 0%, #000000 100%);
+	background: radial-gradient(ellipse at center, #000000 0%, #001019 0%, #000000 100%);
+	text-shadow: #FFFFFF 0px 0px 5px, #FFFFFF 0px 0px 10px, #FFFFFF 0px 0px 15px, #00D3FF 0px 0px 20px, #00D3FF 0px 0px 30px, #00D3FF 0px 0px 40px, #00D3FF 0px 0px 50px, #00D3FF 0px 0px 75px;
+	transition: 0.5s;
+	}
+
+/*--header_end--*/
+/*--szovegakepen--*/
+
+		.kontener {
+  		position: relative;
+  		text-align: center;
+  		color: white;
+		}
+		.kozepre {
+ 		 font-size: 1.6em;
+  		position: absolute;
+  		top: 62%;
+  		left: 50%;
+  		transform: translate(-50%, -50%);
+		}
+/*--sovegakepen_end--*/
+
+/*--footer--*/
+	footer{
+			line-height: 1rem;
+			font-size: 2rem;
+			text-align: center;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	.logok {
+		display: inline-block;
+		padding: 1rem;
+
+	}
+
+	.logok img{	
+		max-height: 1rem;
+	}
+	.logok:hover img{
+		cursor:pointer;
+	}
+/*--footer_end--*/
+
+/*--kepracs--*/
+	.kepek_flex_racs {
+	  display: flex;
+	  flex-wrap: wrap;
+
+	}
+	.kepek_flex_racs .kep_kartya{
+			flex-grow: 0.5;
+			margin-right: 0.2rem;
+			margin-left: 0.2rem;
+			margin-bottom: 1rem;
+			}
+
+	.kep_kartya .kep{
+	  height: 15rem;
+	  flex-grow: 1;
+	}
+
+	.kep_kartya .kep img{
+	  max-height: 100%;
+	  min-width: 100%;
+	  object-fit: contain;
+	}
+	/*.kep_kartya	.kep img:hover{
+
+		} */
+	.kep_kartya p{
+			padding-top: 0.5rem;
+			text-align: center;
+		}
+
+/*--kepracs_end--*/
+
+/*--kep-cim es kartya--*/
+	.kep-cim {
+	    position: relative;
+	    bottom: 1.8em;
+	    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.801);
+	    font-size: 1.2rem;
+	    opacity: 0;
+	    transition: 300ms;
+	}
+
+	.kep_kartya:hover p {
+	    opacity: 1;
+	}
+/*--kep-cim es kartya_end--*/
+
+/*--about--*/
+	.grid{
+			display: grid;
+			grid-template-columns: 2fr 3fr 2fr;
+			grid-template-areas: 
+				"elsooszlop"
+				"masodik"
+				"harmadik"
+			;
+			text-align: center;
+			font-size: min(16px, 2.5vw);
+		}
+	.margo{
+	    margin: 2rem 2rem 2rem;
+	    /*border: 1px solid white;*/
+	}
+	.grid_masodik{
+		padding: 0.5rem 1rem;
+		font-size: min(16px, 2.5vw);
+		text-align: justify;
+  		text-justify: inter-word;
+	}
+
+	.grid{
+		padding: 0.5rem;
+		}
+	#bemutatkozas{
+		text-align: center;
+		padding: 1rem;
+	}
+/*--about_end--*/
+/*--description--*/
+	.grid_harmadik{
+		line-height: 1.5rem;
+		font-size: min(16px, 2.5vw);
+	}
+	.grid_harmadik a:hover{
+	cursor: pointer;
+	background: #000000;
+	background: -moz-radial-gradient(center, #000000 0%, #001019 0%, #000000 100%);
+	background: -webkit-radial-gradient(center, #000000 0%, #001019 0%, #000000 100%);
+	background: radial-gradient(ellipse at center, #000000 0%, #001019 0%, #000000 100%);
+	text-shadow: #FFFFFF 0px 0px 5px, #FFFFFF 0px 0px 10px, #FFFFFF 0px 0px 15px, #00D3FF 0px 0px 20px, #00D3FF 0px 0px 30px, #00D3FF 0px 0px 40px, #00D3FF 0px 0px 50px, #00D3FF 0px 0px 75px;
+	transition: 0.3s;}
+/*--description_end--*/
